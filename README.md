@@ -24,7 +24,7 @@ on *2025 IEEE Transactions on Geoscience and Remote Sensing*.
 ## **Experiments**
 
 
-![Experimental Results 1](https://github.com/Sean1005-x/M2M-LINet/blob/main/temp/experiment.jpg)
+![Experimental Results 1](https://github.com/Sean1005-x/M2M-LINet/blob/main/temp/Experiment.jpg)
 ![Experimental Results 2](https://github.com/Sean1005-x/M2M-LINet/blob/main/temp/Visualization.jpg)
 
 
