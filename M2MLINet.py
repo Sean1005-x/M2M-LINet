@@ -61,7 +61,7 @@ class M2MLINet(nn.Module):
         super(M2MLINet, self).__init__()
         # Backbone network
         self.backbone = pvt_v2_b0()
-        path = r'./model/pvt_v2_b0.pth'
+        path = r'./pvt_v2_b0.pth'
         save_model = torch.load(path)
         model_dict = self.backbone.state_dict()
         state_dict = {k: v for k, v in save_model.items() if k in model_dict.keys()}
@@ -197,3 +197,4 @@ class M2MLINet(nn.Module):
         edge_out = nn.Sigmoid()(e_out)
 
         return change_out, edge_out
+        
