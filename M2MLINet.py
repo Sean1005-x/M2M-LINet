@@ -6,6 +6,7 @@ M2M-LINet
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from thop import profile, clever_format
 from pvtv2 import pvt_v2_b0
 from LTB import TransformerBlock
 from BAEM import BAEM
@@ -197,4 +198,14 @@ class M2MLINet(nn.Module):
         edge_out = nn.Sigmoid()(e_out)
 
         return change_out, edge_out
-        
+
+
+if __name__ == '__main__':
+    model = M2MLINet()
+    print(model)
+    x1 = torch.randn((1, 3, 256, 256))
+    x2 = torch.randn((1, 3, 256, 256))
+    x, _ = model(x1, x2)
+    flops1, params1 = profile(model, (x1, x2))
+    flops1, params1 = clever_format([flops1, params1], "%.3f")
+    print(flops1, params1)
