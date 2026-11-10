@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m2m-linet"
+version = "1.0.0"
+description = "Lightweight interleaved network for remote sensing image change detection"
+readme = "README.md"
+requires-python = ">=3.9"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["m2m_linet*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
