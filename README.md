@@ -92,7 +92,7 @@ python train.py --data-root /path/to/DATA_ROOT --output-dir runs/experiment --re
 
 ## 来源与引用
 
-本项目基于 [Sean1005-x/M2M-LINet](https://github.com/Sean1005-x/M2M-LINet) 整理，保留原作者署名和论文引用。上游未提供独立 LICENSE 文件，本整理版本不额外声明开源许可。
+本项目基于 [Sean1005-x/M2M-LINet](https://github.com/Sean1005-x/M2M-LINet) 整理，保留原作者署名和论文引用。
 
 ```bibtex
 @ARTICLE{10912653,
