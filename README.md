@@ -1,6 +1,6 @@
 # M2M-LINet
 
-面向遥感影像二值变化检测的轻量级交错网络，支持 CPU 与单卡 CUDA。
+面向遥感影像二值变化检测的轻量级交错网络
 
 论文：[From Macro to Micro: A Lightweight Interleaved Network for Remote Sensing Image Change Detection](https://doi.org/10.1109/TGRS.2025.3548562)，IEEE Transactions on Geoscience and Remote Sensing，2025。
 
